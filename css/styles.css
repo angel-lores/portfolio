@@ -1,0 +1,18 @@
+:root {
+  --blue: #004052;
+  --darkblue: #002b36;
+  --white: #ffffff;
+  --softwhite: #90bfcc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  background-color: var(--blue);
+  color: var(--softwhite);
+}
