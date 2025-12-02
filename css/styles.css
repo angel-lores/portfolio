@@ -3,6 +3,7 @@
   --darkblue: #002b36;
   --white: #ffffff;
   --softwhite: #90bfcc;
+  --hoverblue: #1d4955;
 }
 
 * {
@@ -15,4 +16,80 @@ body {
   font-size: 1.2em;
   background-color: var(--blue);
   color: var(--softwhite);
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkblue);
+  z-index: 1000;
+}
+
+.site-nav {
+  width: 100%;
+}
+
+.site-nav .nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.site-nav .nav-item {
+  display: inline-block;
+}
+
+.site-nav .nav-item a {
+  display: block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  color: var(--softwhite);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.site-nav .nav-item a:hover,
+.site-nav .nav-item a:focus {
+  background-color: var(--hoverblue);
+  color: var(--white);
+}
+
+main {
+  margin-top: 90px;
+  padding: 0 1rem;
+}
+
+.page-section {
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  min-height: 100vh;
+  scroll-margin-top: 100px;
+}
+
+.page-section h2 {
+  color: var(--white);
+  margin-top: 0;
+}
+
+@media (max-width: 520px) {
+  .site-nav .nav-item {
+    width: 100%;
+  }
+
+  .site-nav .nav-item a {
+    padding: 0.75em 1em;
+    text-align: left;
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+  .page-section {
+    scroll-margin-top: 210px;
+  }
 }
