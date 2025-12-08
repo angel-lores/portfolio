@@ -38,7 +38,7 @@
               Science.
             </p>
             <p>
-              I enjoy working on Cloud Infrastucture, AI and Machine Learning,
+              I enjoy working on Cloud Infrastructure, AI and Machine Learning,
               and building tools that make complex systems easier to understand
               and use.
             </p>
@@ -68,84 +68,189 @@
 
       <section id="experience" class="page-section">
         <h2>Experience</h2>
-        <div id="exp-carousel" class="carousel slide" data-bs-ride="false">
+        <div class="experience-grid">
+          <article class="experience-card">
+            <img
+              src="assets/images/sic-logo.png"
+              alt="The Standard Insurance Company Logo"
+              class="exp-logo"
+            />
+            <div class="exp-text">
+              <h3>AI Engineer Intern</h3>
+              <p class="exp-company">The Standard Insurance Company</p>
+              <p class="exp-dates">Jul 2025 - Present</p>
+              <p class="exp-description">
+                Building a vector-search based Retrieval Augmented Generation
+                (RAG) system for contract search using LangChain and OpenAI
+                models. Modernizing legacy internal tools into cleaner, more
+                maintainable codebases, often starting from Figma designs and
+                using Copilot to accelerate refactors. Gaining hands-on
+                experience with Azure, AWS, and Google Cloud across development
+                and deployment workflows.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <img
+              src="assets/images/ls-logo.png"
+              alt="LegitScript Logo"
+              class="exp-logo"
+            />
+            <div class="exp-text">
+              <h3>Software Engineer Intern</h3>
+              <p class="exp-company">LegitScript</p>
+              <p class="exp-dates">Jan 2025 - Jun 2025</p>
+              <p class="exp-description">
+                Worked on the merchant monitoring platform, maintaining and
+                extending TypeScript services running on AWS. Safely removed
+                unused legacy code by replacing its behavior where needed and
+                validating that no dependencies were left behind. Added new
+                features and data flows for upserting records into DynamoDB to
+                support internal teams.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <img
+              src="assets/images/sic-logo.png"
+              alt="The Standard Insurance Company Logo"
+              class="exp-logo"
+            />
+            <div class="exp-text">
+              <h3>Cloud Engineer Intern</h3>
+              <p class="exp-company">The Standard Insurance Company</p>
+              <p class="exp-dates">Jul 2024 - Dec 2024</p>
+              <p class="exp-description">
+                Built an automated test pipeline so the team no longer had to
+                run long manual regression suites on weekends. Helped maintain
+                Azure infrastructure for internal applications while learning
+                core cloud engineering practices. Contributed to documentation
+                and monitoring improvements for the services I supported.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="page-section">
+        <h2>Projects</h2>
+        <div id="proj-carousel" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
-            <!-- First Job (Current) -->
+            <div class="carousel-item">
+              <article class="project-card">
+                <img
+                  src="assets/images/spline.png"
+                  alt="Screenshot of cubic B-spline curve fitting program"
+                  class="project-image"
+                />
+                <div class="project-body">
+                  <h3>Interactive Cubic B-Spline Curve Fitting</h3>
+                  <p class="project-tagline">
+                    Fit a smooth cubic B-spline through clicked or file-loaded
+                    data points.
+                  </p>
+                  <p>
+                    C program that allows the user to click points or load them
+                    from a file and then fits a smooth cubic B-spline curve
+                    through the data. I implemented Gaussian elimination with
+                    partial pivoting to solve the linear system for the spline
+                    coefficients and used FPToolkit to render the curve and
+                    control points.
+                  </p>
+                  <p class="project-tools">
+                    Tools: C, FPToolkit, Gaussian elimination, cubic B-splines
+                  </p>
+                </div>
+                <a
+                  class="project-link"
+                  href="https://github.com/angel-lores/portfolio/blob/main/projects/spline.c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+              <article class="project-card">
+                <img
+                  src="assets/images/mlp_mnist.png"
+                  alt="Accuracy curves and confusion matrix for MNIST neural network"
+                  class="project-image"
+                />
+                <div class="project-body">
+                  <h3>MNIST Handwritten Digit Classifier (2-Layer MLP)</h3>
+                  <p class="project-tagline">
+                    Neural network from scratch to classify 28x28 pixel digits.
+                  </p>
+                  <p>
+                    Built a two-layer multilayer perceptron from scratch in
+                    Python to classify MNIST digits. I implemented forward
+                    propagation, backpropagation with a sigmoid activation, and
+                    momentum-based gradient updates, then plotted train/test
+                    accuracy and generated a confusion matrix to analyze
+                    performance.
+                  </p>
+                  <p class="project-tools">
+                    Tools: Python, NumPy, Matplotlib, Keras MNIST loader,
+                    backpropagation
+                  </p>
+                </div>
+                <a
+                  class="project-link"
+                  href="https://github.com/angel-lores/portfolio/blob/main/projects/mlp_mnist.py"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+              </article>
+            </div>
+
             <div class="carousel-item active">
-              <div class="experience-card">
+              <article class="project-card">
                 <img
-                  src="assets/images/sic-logo.png"
-                  alt="The Standard Insurance Company Logo"
-                  class="exp-logo"
+                  src="assets/images/sierpinski.png"
+                  alt="Sierpinski triangle rendered with colored gradient lines"
+                  class="project-image"
                 />
-                <div class="exp-text">
-                  <h3>AI Engineer Intern</h3>
-                  <p class="exp-company">The Standard Insurance Company</p>
-                  <p class="exp-dates">Jul 2025 - Present</p>
-                  <p class="exp-description">
-                    Building a vector-search based Retrieval Augmented
-                    Generation (RAG) system for contract search using LangChain
-                    and OpenAI models. Modernizing legacy internal tools into
-                    cleaner, more maintainable codebases, often starting from
-                    Figma designs and using Copilot to accelerate refactors.
-                    Gaining hands-on experience with Azure, AWS, and Google
-                    Cloud across development and deployment workflows.
+                <div class="project-body">
+                  <h3>Sierpinski Triangle Fractal Renderer</h3>
+                  <p class="project-tagline">
+                    Recursive fractal drawing with position-based color
+                    gradients.
+                  </p>
+                  <p>
+                    C program that draws an equilateral triangle and recursively
+                    subdivides it to generate the Sierpinski triangle using a
+                    midpoint algorithm. I wrote a custom line-drawing routine
+                    that colors each point based on its position, producing a
+                    smooth gradient across the fractal and practicing recursion
+                    and basic computer graphics.
+                  </p>
+                  <p class="project-tools">
+                    Tools: C, FPToolkit, recursion, custom line rasterization
                   </p>
                 </div>
-              </div>
-            </div>
-            <!-- Second Job -->
-            <div class="carousel-item">
-              <div class="experience-card">
-                <img
-                  src="assets/images/ls-logo.png"
-                  alt="LegitScript Logo"
-                  class="exp-logo"
-                />
-                <div class="exp-text">
-                  <h3>Software Engineer Intern</h3>
-                  <p class="exp-company">LegitScript</p>
-                  <p class="exp-dates">Jan 2025 - Jun 2025</p>
-                  <p class="exp-description">
-                    Worked on the merchant monitoring platform, maintaining and
-                    extending TypeScript services running on AWS. Safely removed
-                    unused legacy code by replacing its behavior where needed
-                    and validating that no dependencies were left behind. Added
-                    new features and data flows for upserting records into
-                    DynamoDB to support internal teams.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Third Job -->
-            <div class="carousel-item">
-              <div class="experience-card">
-                <img
-                  src="assets/images/sic-logo.png"
-                  alt="The Standard Insurance Company Logo"
-                  class="exp-logo"
-                />
-                <div class="exp-text">
-                  <h3>Cloud Engineer Intern</h3>
-                  <p class="exp-company">The Standard Insurance Company</p>
-                  <p class="exp-dates">Jul 2024 - Dec 2024</p>
-                  <p class="exp-description">
-                    Built an automated test pipeline so the team no longer had
-                    to run long manual regression suites on weekends. Helped
-                    maintain Azure infrastructure for internal applications
-                    while learning core cloud engineering practices. Contributed
-                    to documentation and monitoring improvements for the
-                    services I supported. Acquired experience with Azure DevOps,
-                    ARM templates, and PowerShell scripting.
-                  </p>
-                </div>
-              </div>
+                <a
+                  class="project-link"
+                  href="https://github.com/angel-lores/portfolio/blob/main/projects/sierpinski.c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+              </article>
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#exp-carousel"
+            data-bs-target="#proj-carousel"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,115 +259,12 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#exp-carousel"
+            data-bs-target="#proj-carousel"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Next</span>
           </button>
-        </div>
-      </section>
-      <section id="projects" class="page-section">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <img
-              src="assets/images/spline.png"
-              alt="Screenshot of cubic B-spline curve fitting program"
-              class="project-image"
-            />
-            <div class="project-body">
-              <h3>Interactive Cubic B-Spline Curve Fitting</h3>
-              <p class="project-tagline">
-                Fit a smooth cubic B-spline through clicked or file-loaded data
-                points.
-              </p>
-              <p>
-                C program that allows the user to click points or load them from
-                a file and then fits a smooth cubic B-spline curve through the
-                data. I implemented Gaussian elimination with partial pivoting
-                to solve the linear system for the spline coefficients and used
-                FPToolkit to render the curve and control points.
-              </p>
-              <p class="project-tools">
-                Tools: C, FPToolkit, Gaussian elimination, cubic B-splines
-              </p>
-            </div>
-            <a
-              class="project-link"
-              href="https://github.com/angel-lores/portfolio/blob/main/projects/spline.c"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View code
-            </a>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="assets/images/mlp_mnist.png"
-              alt="Accuracy curves and confusion matrix for MNIST neural network"
-              class="project-image"
-            />
-            <div class="project-body">
-              <h3>MNIST Handwritten Digit Classifier (2-Layer MLP)</h3>
-              <p class="project-tagline">
-                Neural network from scratch to classify 28x28 pixel digits.
-              </p>
-              <p>
-                Built a two-layer multilayer perceptron from scratch in Python
-                to classify MNIST digits. I implemented forward propagation,
-                backpropagation with a sigmoid activation, and momentum-based
-                gradient updates, then plotted train/test accuracy and generated
-                a confusion matrix to analyze performance.
-              </p>
-              <p class="project-tools">
-                Tools: Python, NumPy, Matplotlib, Keras MNIST loader,
-                backpropagation
-              </p>
-            </div>
-            <a
-              class="project-link"
-              href="https://github.com/angel-lores/portfolio/blob/main/projects/mlp_mnist.py"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View code
-            </a>
-          </article>
-
-          <article class="project-card">
-            <img
-              src="assets/images/sierpinski.png"
-              alt="Sierpinski triangle rendered with colored gradient lines"
-              class="project-image"
-            />
-            <div class="project-body">
-              <h3>Sierpinski Triangle Fractal Renderer</h3>
-              <p class="project-tagline">
-                Recursive fractal drawing with position-based color gradients.
-              </p>
-              <p>
-                C program that draws an equilateral triangle and recursively
-                subdivides it to generate the Sierpinski triangle using a
-                midpoint algorithm. I wrote a custom line-drawing routine that
-                colors each point based on its position, producing a smooth
-                gradient across the fractal and practicing recursion and basic
-                computer graphics.
-              </p>
-              <p class="project-tools">
-                Tools: C, FPToolkit, recursion, custom line rasterization
-              </p>
-            </div>
-            <a
-              class="project-link"
-              href="https://github.com/angel-lores/portfolio/blob/main/projects/sierpinski.c"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View code
-            </a>
-          </article>
         </div>
       </section>
 
