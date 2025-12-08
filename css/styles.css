@@ -1,6 +1,7 @@
 :root {
   --blue: #004052;
   --darkblue: #002b36;
+  --darkerblue: #01232e;
   --white: #ffffff;
   --softwhite: #90bfcc;
   --hoverblue: #1d4955;
@@ -125,7 +126,7 @@ main {
   max-width: 1100px;
   margin: 0 auto 3rem auto;
   padding: 0 5rem;
-  min-height: 100vh;
+  min-height: 90vh;
   scroll-margin-top: 100px;
 }
 
@@ -135,6 +136,7 @@ main {
 }
 
 /* Experience layout */
+
 .experience-grid {
   display: grid;
   grid-auto-rows: minmax(0, 1fr);
@@ -179,6 +181,7 @@ main {
 }
 
 /* Projects carousel layout */
+
 #proj-carousel {
   margin-top: 1.5rem;
 }
@@ -253,6 +256,80 @@ main {
 #proj-carousel .carousel-control-next {
   width: 5%;
 }
+
+/* Contact form */
+
+.contact-form {
+  margin: 1.5rem auto 0;
+  max-width: 640px;
+  background-color: var(--darkblue);
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 0 18px var(--black);
+}
+
+.contact-form .form-row {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  color: var(--softwhite);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--softwhite);
+  background-color: var(--darkerblue);
+  color: var(--softwhite);
+  font-size: 0.95rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--softwhite);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--softwhite);
+  box-shadow: 0 0 0 2px var(--darkblue);
+}
+
+.contact-submit {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--hoverblue);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-submit:hover,
+.contact-submit:focus {
+  background-color: var(--softwhite);
+  color: var(--black);
+}
+
+.form-help {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+/* Responsive styles */
 
 @media (max-width: 700px) {
   .site-nav .nav-item {

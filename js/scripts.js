@@ -16,4 +16,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  const contactForm = document.querySelector(".contact-form");
+
+  if (contactForm) {
+    const messageField = contactForm.querySelector("#message");
+
+    const counterEl = document.createElement("p");
+    counterEl.className = "form-help";
+    counterEl.textContent = "0 / 500 characters";
+    messageField.insertAdjacentElement("afterend", counterEl);
+
+    const updateCounter = () => {
+      const length = messageField.value.length;
+      counterEl.textContent = `${length} / 500 characters`;
+    };
+
+    updateCounter();
+
+    messageField.addEventListener("input", updateCounter);
+
+    contactForm.addEventListener("submit", (event) => {
+      if (messageField.value.trim().length < 10) {
+        event.preventDefault();
+        counterEl.textContent =
+          "Message should be at least 10 characters long.";
+      }
+    });
+  }
 });
