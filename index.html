@@ -49,7 +49,7 @@
           <ul>
             <li>
               Currently working at the Standard Insurance Company as an
-              Artifical Intelligence Engineer Intern to improve the efficiency
+              Artificial Intelligence Engineer Intern to improve the efficiency
               of Retrieval Augmented Generation algorithms.
             </li>
             <li>
@@ -81,7 +81,7 @@
                 <div class="exp-text">
                   <h3>AI Engineer Intern</h3>
                   <p class="exp-company">The Standard Insurance Company</p>
-                  <p class="exp-dates">July 2025 - Present</p>
+                  <p class="exp-dates">Jul 2025 - Present</p>
                   <p class="exp-description">
                     Building a vector-search based Retrieval Augmented
                     Generation (RAG) system for contract search using LangChain
@@ -105,7 +105,7 @@
                 <div class="exp-text">
                   <h3>Software Engineer Intern</h3>
                   <p class="exp-company">LegitScript</p>
-                  <p class="exp-dates">Jan 2025 - June 2025</p>
+                  <p class="exp-dates">Jan 2025 - Jun 2025</p>
                   <p class="exp-description">
                     Worked on the merchant monitoring platform, maintaining and
                     extending TypeScript services running on AWS. Safely removed
@@ -122,13 +122,13 @@
               <div class="experience-card">
                 <img
                   src="assets/images/sic-logo.png"
-                  alt="Portland State University Logo"
+                  alt="The Standard Insurance Company Logo"
                   class="exp-logo"
                 />
                 <div class="exp-text">
                   <h3>Cloud Engineer Intern</h3>
                   <p class="exp-company">The Standard Insurance Company</p>
-                  <p class="exp-dates">July 2024 - Dec 2024</p>
+                  <p class="exp-dates">Jul 2024 - Dec 2024</p>
                   <p class="exp-description">
                     Built an automated test pipeline so the team no longer had
                     to run long manual regression suites on weekends. Helped
@@ -164,12 +164,108 @@
       </section>
       <section id="projects" class="page-section">
         <h2>Projects</h2>
-        <p>
-          Feels like there should be three projects here, but not sure what to
-          place here yet. Maybe the prime number generator, the image
-          classifier, and one of the fractals?
-        </p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="assets/images/spline.png"
+              alt="Screenshot of cubic B-spline curve fitting program"
+              class="project-image"
+            />
+            <div class="project-body">
+              <h3>Interactive Cubic B-Spline Curve Fitting</h3>
+              <p class="project-tagline">
+                Fit a smooth cubic B-spline through clicked or file-loaded data
+                points.
+              </p>
+              <p>
+                C program that allows the user to click points or load them from
+                a file and then fits a smooth cubic B-spline curve through the
+                data. I implemented Gaussian elimination with partial pivoting
+                to solve the linear system for the spline coefficients and used
+                FPToolkit to render the curve and control points.
+              </p>
+              <p class="project-tools">
+                Tools: C, FPToolkit, Gaussian elimination, cubic B-splines
+              </p>
+            </div>
+            <a
+              class="project-link"
+              href="https://github.com/angel-lores/portfolio/blob/main/projects/spline.c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code
+            </a>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/images/mlp_mnist.png"
+              alt="Accuracy curves and confusion matrix for MNIST neural network"
+              class="project-image"
+            />
+            <div class="project-body">
+              <h3>MNIST Handwritten Digit Classifier (2-Layer MLP)</h3>
+              <p class="project-tagline">
+                Neural network from scratch to classify 28x28 pixel digits.
+              </p>
+              <p>
+                Built a two-layer multilayer perceptron from scratch in Python
+                to classify MNIST digits. I implemented forward propagation,
+                backpropagation with a sigmoid activation, and momentum-based
+                gradient updates, then plotted train/test accuracy and generated
+                a confusion matrix to analyze performance.
+              </p>
+              <p class="project-tools">
+                Tools: Python, NumPy, Matplotlib, Keras MNIST loader,
+                backpropagation
+              </p>
+            </div>
+            <a
+              class="project-link"
+              href="https://github.com/angel-lores/portfolio/blob/main/projects/mlp_mnist.py"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code
+            </a>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/images/sierpinski.png"
+              alt="Sierpinski triangle rendered with colored gradient lines"
+              class="project-image"
+            />
+            <div class="project-body">
+              <h3>Sierpinski Triangle Fractal Renderer</h3>
+              <p class="project-tagline">
+                Recursive fractal drawing with position-based color gradients.
+              </p>
+              <p>
+                C program that draws an equilateral triangle and recursively
+                subdivides it to generate the Sierpinski triangle using a
+                midpoint algorithm. I wrote a custom line-drawing routine that
+                colors each point based on its position, producing a smooth
+                gradient across the fractal and practicing recursion and basic
+                computer graphics.
+              </p>
+              <p class="project-tools">
+                Tools: C, FPToolkit, recursion, custom line rasterization
+              </p>
+            </div>
+            <a
+              class="project-link"
+              href="https://github.com/angel-lores/portfolio/blob/main/projects/sierpinski.c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code
+            </a>
+          </article>
+        </div>
       </section>
+
       <section id="contact" class="page-section">
         <h2>Contact</h2>
         <p>

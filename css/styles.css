@@ -179,6 +179,70 @@ main {
   width: 5%;
 }
 
+/* Projects layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: var(--darkblue);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 18px var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background-color: var(--black);
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-body {
+  flex: 1;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.project-tagline {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.project-tools {
+  margin-top: 0.75rem;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.project-link {
+  margin-top: 1.25rem;
+  align-self: flex-start;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--softwhite);
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .site-nav .nav-item {
     width: 100%;
@@ -232,5 +296,17 @@ main {
   .exp-logo {
     width: 70px;
     height: 70px;
+  }
+
+  .projects-grid {
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .project-image {
+    max-height: 180px;
   }
 }
