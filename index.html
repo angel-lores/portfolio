@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main site navigation">
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item"><a href="#experience">Experience</a></li>
@@ -26,9 +26,13 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="about" class="page-section about-section">
-        <h1 class="page-title">Welcome to my website!</h1>
+    <main id="main-content">
+      <section
+        id="about"
+        class="page-section about-section"
+        aria-labelledby="about-heading"
+      >
+        <h1 id="about-heading" class="page-title">Welcome to my website!</h1>
         <div class="about-layout">
           <figure class="about-photo">
             <img src="assets/images/profile.png" alt="Photo of Angel Lores" />
@@ -70,8 +74,12 @@
         </div>
       </section>
 
-      <section id="experience" class="page-section">
-        <h2>Experience</h2>
+      <section
+        id="experience"
+        class="page-section"
+        aria-labelledby="experience-heading"
+      >
+        <h2 id="experience-heading">Experience</h2>
         <div class="experience-grid">
           <article class="experience-card">
             <img
@@ -138,8 +146,12 @@
         </div>
       </section>
 
-      <section id="projects" class="page-section">
-        <h2>Projects</h2>
+      <section
+        id="projects"
+        class="page-section"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading">Projects</h2>
         <div id="proj-carousel" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item">
@@ -256,6 +268,7 @@
             type="button"
             data-bs-target="#proj-carousel"
             data-bs-slide="prev"
+            aria-label="Previous project"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -265,6 +278,7 @@
             type="button"
             data-bs-target="#proj-carousel"
             data-bs-slide="next"
+            aria-label="Next project"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -272,8 +286,12 @@
         </div>
       </section>
 
-      <section id="contact" class="page-section">
-        <h2>Contact</h2>
+      <section
+        id="contact"
+        class="page-section"
+        aria-labelledby="contact-heading"
+      >
+        <h2 id="contact-heading">Contact</h2>
         <p>
           If you'd like to get in touch about opportunities or projects, you can
           send me a message with this form.
@@ -283,6 +301,7 @@
           class="contact-form"
           action="https://formspree.io/f/mrbnaqbe"
           method="post"
+          aria-label="Contact form for Angel Lores"
         >
           <div class="form-row">
             <label for="name">Name</label>
@@ -325,6 +344,7 @@
               placeholder="Write your message here..."
               maxlength="500"
               required
+              aria-describedby="message-help"
             ></textarea>
           </div>
 

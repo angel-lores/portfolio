@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const counterEl = document.createElement("p");
     counterEl.className = "form-help";
+    counterEl.id = "message-help";
     counterEl.textContent = "0 / 500 characters";
     messageField.insertAdjacentElement("afterend", counterEl);
 
