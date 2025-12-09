@@ -27,6 +27,7 @@ body {
   width: 100%;
   background-color: var(--darkblue);
   z-index: 1000;
+  border-bottom: 1px solid var(--softwhite);
 }
 
 .site-nav {
@@ -127,7 +128,7 @@ main {
   margin: 0 auto 3rem auto;
   padding: 0 5rem;
   min-height: 90vh;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
 
 .page-section h2 {
