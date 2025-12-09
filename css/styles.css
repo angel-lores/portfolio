@@ -119,6 +119,49 @@ body {
   margin-bottom: 0.6rem;
 }
 
+.about-gallery {
+  margin-top: 2rem;
+}
+
+.about-gallery h3 {
+  margin-top: 0;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-gallery-item {
+  margin: 0;
+}
+
+.about-gallery-item img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 180px;
+  box-shadow: 0 0 14px var(--black);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-gallery-item img:hover,
+.about-gallery-item img:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 22px var(--black);
+}
+
+.about-gallery-item figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
 main {
   margin-top: 90px;
 }
