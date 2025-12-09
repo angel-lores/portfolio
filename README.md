@@ -36,3 +36,11 @@ cd portfolio
 ```
 
 2. Open `index.html` in a browser, or serve locally with a simple HTTP server
+
+## Outside Sources for inspiration
+
+- https://www.w3schools.com/css/css3_images.asp
+- https://www.slingacademy.com/article/smooth-scrolling-to-elements-with-javascript-dom-methods/
+- https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
+- https://www.w3schools.com/accessibility/accessibility_labels.php
+- https://www.w3schools.com/Css/css_image_gallery.asp
